@@ -90,17 +90,4 @@ public class CalculatorTest {
         assertEquals(100, result);
     }
 
-    @Test
-    public void evaluate_ReturnsSubtractionResult_IfInputIsSingleSubtraction() {
-        // given
-        String input = "100-50";
-
-        // when
-        int result = new Calculator().evaluate(input);
-
-        // then
-        assertEquals(50, result);
-    }
-
-
 }
