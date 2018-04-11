@@ -14,10 +14,6 @@ public class DiscountCalculator {
             return 1;
         }
 
-        if (age >= 70 || status == PersonStatus.DISABLED) {
-
-            return 0.9;
-        }
 
         if (age < 18) {
 
@@ -27,6 +23,11 @@ public class DiscountCalculator {
         if (age >= 18 && age <= 26 && status == PersonStatus.STUDENT) {
 
             return 0.5;
+        }
+
+        if (age >= 70 || status == PersonStatus.DISABLED) {
+
+            return 0.9;
         }
 
         return 0;
